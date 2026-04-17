@@ -44,6 +44,9 @@ default_border none
 # Notifications
 exec mako
 
+# Wifi tray
+exec nm-applet
+
 
 ### Idle configuration
 #
