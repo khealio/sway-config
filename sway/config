@@ -27,11 +27,11 @@ output * bg "/home/kheal/Pictures/Backgrounds/Minty Rainbows.jpg" fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-### Clamshell mode
-set $laptop eDP-1
-bindswitch --reload --locked lid:on output $laptop disable
-bindswitch --reload --locked lid:off output $laptop enable
-exec_always keep_clamshell_on_sway_reload.sh
+### Clamshell mode -- CAUSES SWAY TO BREAK ON SLEEP (apparently)
+#set $laptop eDP-1
+#bindswitch --reload --locked lid:on output $laptop disable
+#bindswitch --reload --locked lid:off output $laptop enable
+#exec_always keep_clamshell_on_sway_reload.sh
 
 
 ### Appearance
@@ -39,7 +39,7 @@ exec_always keep_clamshell_on_sway_reload.sh
 # Window borders
 # Options are normal (pixel & title), pixel (border only), none (guess)
 # Windows must be re-opened to apply these even after reloading Sway
-default_border none
+default_border pixel
 
 # Notifications
 exec mako
@@ -104,7 +104,8 @@ exec swayidle -w \
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec 'swaymsg exit'
 #
 # Moving around:
 #
