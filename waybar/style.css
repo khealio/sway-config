@@ -152,7 +152,7 @@ button:hover {
 }
 
 #power-profiles-daemon.balanced {
-    color: #2980b9;
+    color: #9b989a;
 }
 
 #power-profiles-daemon.power-saver {
@@ -172,7 +172,7 @@ label:focus {
 }
 
 #disk {
-    color: #964B00;
+    color: #49a0d9;
 }
 
 #backlight {

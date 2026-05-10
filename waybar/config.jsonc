@@ -18,6 +18,7 @@
         "backlight",
         "cpu",
         "memory",
+        "disk",
         "temperature",
         "power-profiles-daemon",
         "idle_inhibitor",
@@ -30,22 +31,22 @@
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    /* "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    }, */
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -117,6 +118,10 @@
     },
     "memory": {
         "format": "{}% "
+    },
+    "disk": {
+        "format": "{specific_used:0.1f} / {specific_total:0.1f} GiB",
+        "unit": "GiB"
     },
     "temperature": {
         // "thermal-zone": 2,
