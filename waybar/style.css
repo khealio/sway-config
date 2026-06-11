@@ -4,7 +4,9 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
+    /* background-color: rgba(43, 48, 59, 0.5); */
+    background-color: #1C1B21;
+    opacity: 0.9;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     transition-property: background-color;
@@ -133,7 +135,7 @@ button:hover {
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.plugged) {
+#battery.critical:not(.charging) {
     color: #ffffff;
     background-color: #f53c3c;
     animation-name: blink;
