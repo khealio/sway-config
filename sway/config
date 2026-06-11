@@ -42,6 +42,7 @@ output DP-3 scale 1.5
 # Options are normal (pixel & title), pixel (border only), none (guess)
 # Windows must be re-opened to apply these even after reloading Sway
 default_border pixel
+# Window gap
 gaps inner 5
 
 # Notifications
